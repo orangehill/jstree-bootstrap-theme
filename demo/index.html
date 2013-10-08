@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>jsTree Bootstrap Theme Demo</title>
+		<script type="text/javascript" src="../_lib/jquery.js"></script>
+		<script type="text/javascript" src="../_lib/jquery.cookie.js"></script>
+		<script type="text/javascript" src="../_lib/jquery.hotkeys.js"></script>
+		<script type="text/javascript" src="../jquery.jstree.js"></script>
+		<link type="text/css" rel="stylesheet" href="../_docs/syntax/!style.css"/>
+		<link type="text/css" rel="stylesheet" href="../_docs/!style.css"/>
+		<script type="text/javascript" src="../_docs/syntax/!script.js"></script>
+		<!-- Include LESS files for development only (otherwise style.css is auto-loaded by jsTree plugin) -->
+		<!--
+			<link rel="stylesheet/less" href="../themes/proton/style.less?1375004169" media="all" />
+			<script type="text/javascript" src="../themes/proton/less-1.3.1.min.js"></script>
+		-->
+		<!-- Bootstrap 3 CSS: -->
+        <link rel="stylesheet" href="styles/bootstrap.css">
+        <!-- Fonts CSS: -->
+		<link rel="stylesheet" href="styles/font-titillium.css" type="text/css" />
+	</head>
+	<body id="demo_body">
+		<div id="container">
+			<h1 style="margin-top:20px;">JSTREE BOOTSTRAP THEME DEMO</h1>
+			<div id="description">
+				<p>jsTree Bootstrap Theme is created as a part of Proton UI Responsive Admin Panel Theme currently being developed.</p>
+				<p>Since there aren't many jsTree themes out there, we thought we'd make this one freely available. Enjoy!</p>
+				<p>Download from Github: <a href="https://github.com/orangehill/jstree-bootstrap-theme">https://github.com/orangehill/jstree-bootstrap-theme</a></p>
+			</div>
+			<h2>Responsiveness</h2>
+			<div id="description">
+				<p>jsTree Bootstrap Theme is <a href="http://en.wikipedia.org/wiki/Responsive_web_design">responsive</a>. To see the effect go ahead and scale a browser window down until the window width is less then 480 pixels. Mobile friendly design should make it easier to tap nodes with more precision.</p>
+			</div>
+			<h2>LESS CSS support</h2>
+			<div id="description">
+				<p>If you wish to further customize the theme you might find it convenient to use included LESS files. Once done with tweaking all you have to do is compile the files to style.css using lessc command line utility.</p>
+				<p>Please note that both bootstrap.css (Bootstrap 3 CSS, you can also use the minimized version) as well as font-titillium.css (along with the font files) are required for this theme to function properly.</p>
+			</div>
+			<h2>A simple tree demo</h2>
+			<div id="description">
+				<p>An example of simple jsTree.</p>
+				<div id="demo1" class="demo" style="height:300px;">
+					<ul>
+						<li id="phtml_1">
+							<a href="#">Root node 1</a>
+							<ul>
+								<li id="phtml_2">
+									<a href="#">Child node 1</a>
+								</li>
+								<li id="phtml_3">
+									<a href="#">Child node 2</a>
+								</li>
+								<li id="phtml_4">
+									<a href="#">Child node 3</a>
+								</li>
+							</ul>
+						</li>
+						<li id="phtml_5">
+							<a href="#">Root node 2</a>
+						</li>
+						<li id="phtml_6">
+							<a href="#">Root node 2</a>
+						</li>
+						<li id="phtml_7">
+							<a href="#">Root node 2</a>
+						</li>
+					</ul>
+				</div>
+				<script type="text/javascript" class="source below">
+					$(function() {
+						$("#demo1").jstree({
+							// the `plugins` array allows you to configure the active plugins on this instance
+							"plugins" : ["themes","html_data","ui","crrm","hotkeys"],
+							// each plugin you have included can have its own config object
+							"core" : {
+								"animation" : 100,
+								"initially_open" : [ "phtml_1" ]
+							},
+							// set a theme
+							"themes" : {
+					            "theme" : "proton"
+					        },
+						})
+					});
+				</script>
+			</div>
+
+			<h2>No dots tree demo</h2>
+			<div id="description">
+				<p>A tree without guiding dots.</p>
+				<div id="demo2" class="demo" style="height:300px;">
+					<ul>
+						<li id="phtml_1">
+							<a href="#">Root node 1</a>
+							<ul>
+								<li id="phtml_2">
+									<a href="#">Child node 1</a>
+								</li>
+								<li id="phtml_3">
+									<a href="#">Child node 2</a>
+								</li>
+								<li id="phtml_4">
+									<a href="#">Child node 3</a>
+								</li>
+							</ul>
+						</li>
+						<li id="phtml_5">
+							<a href="#">Root node 2</a>
+						</li>
+						<li id="phtml_6">
+							<a href="#">Root node 2</a>
+						</li>
+						<li id="phtml_7">
+							<a href="#">Root node 2</a>
+						</li>
+					</ul>
+				</div>
+				<script type="text/javascript" class="source below">
+					$(function() {
+						$("#demo2").jstree({
+							// the `plugins` array allows you to configure the active plugins on this instance
+							"plugins" : ["themes","html_data","ui","crrm","hotkeys"],
+							// each plugin you have included can have its own config object
+							"core" : {
+								"animation" : 100,
+								"initially_open" : [ "phtml_1" ]
+							},
+							// set a theme
+							"themes" : {
+					            "theme" : "proton",
+					            "dots" : false
+					        },
+						})
+					});
+				</script>
+			</div>
+
+			<h2>No icons tree demo</h2>
+			<div id="description">
+				<p>A tree without icons.</p>
+				<div id="demo3" class="demo" style="height:300px;">
+					<ul>
+						<li id="phtml_1">
+							<a href="#">Root node 1</a>
+							<ul>
+								<li id="phtml_2">
+									<a href="#">Child node 1</a>
+								</li>
+								<li id="phtml_3">
+									<a href="#">Child node 2</a>
+								</li>
+								<li id="phtml_4">
+									<a href="#">Child node 3</a>
+								</li>
+							</ul>
+						</li>
+						<li id="phtml_5">
+							<a href="#">Root node 2</a>
+						</li>
+						<li id="phtml_6">
+							<a href="#">Root node 2</a>
+						</li>
+						<li id="phtml_7">
+							<a href="#">Root node 2</a>
+						</li>
+					</ul>
+				</div>
+				<script type="text/javascript" class="source below">
+					$(function() {
+						$("#demo3").jstree({
+							// the `plugins` array allows you to configure the active plugins on this instance
+							"plugins" : ["themes","html_data","ui","crrm","hotkeys"],
+							// each plugin you have included can have its own config object
+							"core" : {
+								"animation" : 100,
+								"initially_open" : [ "phtml_1" ]
+							},
+							// set a theme
+							"themes" : {
+					            "theme" : "proton",
+					            "icons" : false
+					        },
+						})
+					});
+				</script>
+			</div>
+
+			<h2>Tree with a checkbox plugin activated</h2>
+			<div id="description">
+				<p>An example of jsTree with checkbox plugin.</p>
+				<div id="demo4" class="demo" style="height:300px;">
+					<ul>
+						<li id="phtml_1">
+							<a href="#">Root node 1</a>
+							<ul>
+								<li id="phtml_2">
+									<a href="#">Child node 1</a>
+								</li>
+								<li id="phtml_3">
+									<a href="#">Child node 2</a>
+								</li>
+								<li id="phtml_4">
+									<a href="#">Child node 3</a>
+								</li>
+							</ul>
+						</li>
+						<li id="phtml_5">
+							<a href="#">Root node 2</a>
+						</li>
+						<li id="phtml_6">
+							<a href="#">Root node 2</a>
+						</li>
+						<li id="phtml_7">
+							<a href="#">Root node 2</a>
+						</li>
+					</ul>
+				</div>
+				<script type="text/javascript" class="source below">
+					$(function() {
+						$("#demo4").jstree({
+							// the `plugins` array allows you to configure the active plugins on this instance
+							"plugins" : ["themes","html_data","ui","crrm","hotkeys", "checkbox"],
+							// each plugin you have included can have its own config object
+							"core" : {
+								"animation" : 100,
+								"initially_open" : [ "phtml_1" ]
+							},
+							// set a theme
+							"themes" : {
+					            "theme" : "proton",
+					        },
+						})
+					});
+				</script>
+			</div>
+
+			<h2>A more complex example</h2>
+			<div id="description">
+				<p>This example features drag & drop functionality, and a special node type 'file'. If you name a node as 'file' using a types plugin node will change an icon accordingly.</p>
+				<div id="jstree" class="demo" style="height:300px;"></div>
+				<script type="text/javascript" class="source below">
+					$(function () {
+		                $("#jstree").jstree({
+		                    "json_data" : {
+		                        "data" : [
+		                            {
+		                                "data" : {
+		                                    "title" : "Electronics",
+		                                    "attr" : { "href" : "#" }
+		                                },
+		                                "attr" : { "id" : "node1" },
+		                                "children" : [
+		                                    {
+		                                        "data" : {
+		                                            "title" : "Other Electronics",
+		                                            "attr" : { "href" : "#" }
+		                                        },
+		                                        "attr" : { "rel": "product-category" }
+		                                    },
+		                                    {
+		                                        "data" : {
+		                                            "title" : "TV",
+		                                            "attr" : { "href" : "#" }
+		                                        },
+		                                        "attr" : { "rel": "product-category" }
+		                                    },
+		                                    {
+		                                        "data" : {
+		                                            "title" : "DVD Players",
+		                                            "attr" : { "href" : "#" }
+		                                        },
+		                                        "attr" : { "id" : "node2", "class" : "jstree-checked", "rel": "product-category-master" },
+		                                        "children" : [
+		                                            {
+		                                                "data" : {
+		                                                    "title" : "Model Name 1",
+		                                                    "attr" : { "href" : "#" }
+		                                                },
+		                                                "attr" : { "rel": "file" }
+		                                            },
+		                                            {
+		                                                "data" : {
+		                                                    "title" : "Model Name 2",
+		                                                    "attr" : { "href" : "#" }
+		                                                },
+		                                                "attr" : { "rel": "file" }
+		                                            },
+		                                            {
+		                                                "data" : {
+		                                                    "title" : "Model Name 3",
+		                                                    "attr" : { "href" : "#" }
+		                                                },
+		                                                "attr" : { "rel": "file" }
+		                                            },
+		                                        ]
+		                                    },
+		                                    {
+		                                        "data" : {
+		                                            "title" : "GPS",
+		                                            "attr" : { "href" : "#" }
+		                                        },
+		                                        "attr" : { "rel": "product-category" }
+		                                    },
+		                                    {
+		                                        "data" : {
+		                                            "title" : "Home Audio",
+		                                            "attr" : { "href" : "#" }
+		                                        },
+		                                        "attr" : { "rel": "product-category" }
+		                                    }
+		                                ]
+		                            },
+		                            {
+		                                "data" : {
+		                                    "title" : "Software",
+		                                    "attr" : { "href" : "#" }
+		                                }
+		                            },
+		                            {
+		                                "data" : {
+		                                    "title" : "Mobile",
+		                                    "attr" : { "href" : "#" }
+		                                }
+		                            },
+		                            {
+		                                "data" : {
+		                                    "title" : "Web Services",
+		                                    "attr" : { "href" : "#" }
+		                                }
+		                            }
+		                        ]
+		                    },
+		                    "types" : {
+					// I set both options to -2, as I do not need depth and children count checking
+					// Those two checks may slow jstree a lot, so use only when needed
+					"max_depth" : -2,
+					"max_children" : -2,
+					// I want only `drive` nodes to be root nodes
+					// This will prevent moving or creating any other type as a root node
+					"valid_children" : [ "folder" ],
+					"types" : {
+						// The default type
+						"default" : {
+							"valid_children" : "all",
+		                                        "check_node" : false,
+		                                        "uncheck_node" : false
+						},
+						"file" : {
+							"valid_children" : "none",
+						},
+		                                "product-category": {
+							"valid_children" : "file",
+		                                        "check_node" : true,
+		                                        "uncheck_node" : true
+		                                },
+		                                "product-category-master": {
+							"valid_children" : "file",
+		                                }
+		                        },
+		                    },
+		                    "plugins" : [ "themes", "types", "json_data", "ui", "dnd" ],
+		                    "ui" : {
+		                        "initially_select" : [ "node3" ]
+		                    },
+		                    "core" : {
+		                        "initially_open" : [ "node1" , "node2" ]
+		                    },
+		                    // set a theme
+							"themes" : {
+					            "theme" : "proton",
+					        }
+		                });
+		            });
+				</script>
+			</div>
+			<div style="text-align: center;">
+				<a href="http://www.orangehilldev.com">Orange Hill Web Development</a>
+			</div>
+		</div>
+	</body>
+</html>
