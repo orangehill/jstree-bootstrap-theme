@@ -1,21 +1,19 @@
 {
-  "name": "jstree",
-  "title": "jsTree",
-  "description": "jQuery tree plugin",
-  "version": "3.0.4",
-  "homepage": "http://jstree.com",
-  "main": "./dist/jstree.js",
+  "name": "jstree-bootstrap-theme",
+  "title": "jstree-bootstrap-theme",
+  "description": "Bootstrap theme for jsTree 3",
+  "version": "1.0.0",
+  "homepage": "https://github.com/orangehill/jstree-bootstrap-theme",
   "author": {
-    "name": "Ivan Bozhanov",
-    "email": "jstree@jstree.com",
-    "url": "http://vakata.com"
+    "name": "Vedran Opacic @ Orange Hill Development",
+    "email": "vedran.opacic@orangehilldev.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vakata/jstree.git"
+    "url": "git://github.com/orangehill/jstree-bootstrap-theme.git"
   },
   "bugs": {
-    "url": "https://github.com/vakata/jstree/issues"
+    "url": "https://github.com/orangehill/jstree-bootstrap-theme/issues"
   },
   "licenses": [
     {
@@ -26,30 +24,11 @@
   "keywords": [],
   "devDependencies": {
     "grunt": "~0.4.0",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-contrib-concat": "*",
     "grunt-contrib-copy": "*",
-    "dox": "~0.4.4",
     "grunt-contrib-less": "~0.8.2",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-imagemin": "~0.4.0",
-    "grunt-contrib-qunit": "~v0.3.0",
-    "grunt-text-replace": "~0.3.11"
+    "grunt-contrib-imagemin": "~0.4.0"
   },
   "dependencies": {
     "jquery": ">=1.9.1"
-  },
-  "npmName": "jstree",
-  "npmFileMap": [
-    {
-      "basePath": "/dist/",
-      "files": [
-        "jstree.min.js",
-        "themes/**/*.png",
-        "themes/**/*.gif",
-        "themes/**/*.min.css"
-      ]
-    }
-  ]
+  }
 }

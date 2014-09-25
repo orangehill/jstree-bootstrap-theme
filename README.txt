@@ -8,14 +8,18 @@ A legacy version compatible with jsTree pre 1.0 fix2 is still available on a [se
 ##What is jsTree?
 
 jsTree is a tree view for jQuery (depends on 1.9.1 or later). 
-It is absolutely free (MIT licence) at [http://www.jstree.com/](http://www.jstree.com/) or at [https://github.com/vakata/jstree](https://github.com/vakata/jstree) and supports all modern browsers and IE from version 8 up. 
+It is absolutely free (MIT licence) and supports all modern browsers and IE from version 8 up. 
 jsTree can display trees by parsing HTML or JSON and supports AJAX, it is themeable and easy to configure and customize. Events are fired when the user interacts with the tree. Other notable features are inline editing, drag'n'drop support, fuzzy searching (with optional server side calls), tri-state checkbox support, configurable node types, AMD compatibility, easily extendable via plugins.
+
+It is available absolutely free at [http://www.jstree.com/](http://www.jstree.com/) or at [https://github.com/vakata/jstree](https://github.com/vakata/jstree).
+
+For your convenience entire `jsTree 3.0.4` version is included with this theme.
 
 ##Theme Demo
 Theme demo is available at [jsTree Bootstrap Theme Demo Page](http://orangehilldev.com/jstree-bootstrap-theme/demo/) .
 
 ##Responsiveness
-jsTree Bootstrap Theme is [responsive](http://en.wikipedia.org/wiki/Responsive_web_design). To see the effect [open the demo](http://orangehilldev.com/jstree-bootstrap-theme/demo/) and scale a browser window down until the window width is less then 768 pixels. 
+jsTree Bootstrap Theme is [Responsive](http://en.wikipedia.org/wiki/Responsive_web_design). To see the effect [open the demo](http://orangehilldev.com/jstree-bootstrap-theme/demo/) and scale a browser window down until the window width is less then 768 pixels. 
 
 Mobile friendly design should make it easier to tap nodes with more precision.
 
@@ -53,8 +57,8 @@ $(function() {
 
 ##LESS support
 
-If you wish to further customize the theme you might find it convenient to use included [LESS](http://lesscss.org/) files. The theme also includes a [grunt](https://github.com/gruntjs/grunt) script which you can use to build CSS files.
+If you wish to further customize the theme you might find it convenient to use included [LESS](http://lesscss.org/) files. The theme also includes a modified jsTree 3 [grunt ](https://github.com/gruntjs/grunt) script which you can use to build CSS files.
 
-To develop using grunt files just run `grunt` (no options required). This will build theme images and CSS.
+To develop using grunt files just run `grunt` after your LESS changes (no options required). This will build new theme CSS and minified CSS in `dist/themes/proton` directory.
 
-Do not edit files in the `dist` subdirectory as they are generated via grunt. You'll find theme source code in the `src/themes/proton` subdirectory.
+Do not edit files in the `dist` directory as they are generated via grunt. You'll find the theme source code in `src/themes/proton`.
