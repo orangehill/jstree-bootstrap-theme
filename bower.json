@@ -4,6 +4,9 @@
   "homepage": "https://github.com/orangehill/jstree-bootstrap-theme",
   "description": "Reponsive jsTree Twitter Bootstrap 3 Compatible Theme",
   "main": "./dist/themes/proton/style.min.css",
+  "authors": [
+    "Orange Hill Development <vedran.opacic@orangehilldev.com>"
+  ],
   "keywords": [
     "jquery",
     "bootstrap",
