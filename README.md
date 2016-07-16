@@ -1,7 +1,7 @@
 jsTree Bootstrap Theme
 =====================
 Since there aren't many jsTree themes out there, we thought we'd make this one freely available. 
-jsTree Bootstrap Theme is created as a part of [Proton UI Responsive Admin Panel Theme](http://themeforest.net/item/proton-ui-responsive-admin-panel-theme/6240793). The theme is compatible with jsTree 3.
+jsTree Bootstrap Theme is created as a part of [Proton UI Responsive Admin Panel Theme](http://proton.orangehilldev.com/) that we at [Orange Hill Development](http://www.orangehilldev.com) use to build custom admin panels. The theme is compatible with jsTree 3.
 
 A legacy version compatible with jsTree pre 1.0 fix2 is still available on a [separate branch](https://github.com/orangehill/jstree-bootstrap-theme/tree/Legacy_jsTree_Bootstrap_Theme_(for_version_pre_1.0_fix2)) (no longer maintained).
 
