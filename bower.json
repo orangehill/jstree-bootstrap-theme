@@ -5,7 +5,8 @@
   "description": "Reponsive jsTree Twitter Bootstrap 3 Compatible Theme",
   "main": "./dist/themes/proton/style.css",
   "authors": [
-    "Orange Hill Development <vedran.opacic@orangehilldev.com>"
+    "Vedran Opacic <vedran.opacic@orangehilldev.com>",
+    "Tihomir Opacic <tihomir.opacic@orangehilldev.com>"
   ],
   "keywords": [
     "jquery",
@@ -23,6 +24,6 @@
   "dependencies": {
     "jquery": ">= 1.11.1",
     "bootstrap": "~3.0",
-    "jstree": "~3.0.4"
+    "jstree": "~3.3.4"
   }
 }

@@ -25,8 +25,7 @@
   "devDependencies": {
     "grunt": "~0.4.0",
     "grunt-contrib-copy": "*",
-    "grunt-contrib-less": "~0.8.2",
-    "grunt-contrib-imagemin": "~0.4.0"
+    "grunt-contrib-less": "~0.8.2"
   },
   "dependencies": {
     "jquery": ">=1.9.1"
